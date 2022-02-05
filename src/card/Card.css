@@ -1,0 +1,40 @@
+.card__container {
+  width: 300px;
+  height: 120px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-bottom: 4rem;
+}
+
+.card__container-title {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.card__container-title img {
+    width: 40px;
+    height: 40px;
+}
+
+.card__container h1 {
+  padding-top: 1rem;
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  color: #073275;
+}
+
+.card__container:hover {
+  transform: scale(1.1);
+}
+
+
+.loading img {
+    width: 100px;
+    height: 100px;
+}
+
+

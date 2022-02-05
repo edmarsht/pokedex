@@ -1,0 +1,37 @@
+.container__home {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home__contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.home__contain h1 {
+  color: white;
+  font-size: 60px;
+  font-family: 'Acme', sans-serif;
+}
+.home__contain img {
+  width: 80px;
+  height: 100px;
+  margin-left: 1rem;
+}
+
+.home__card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+}
