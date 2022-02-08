@@ -30,6 +30,9 @@
 .card__container:hover {
   transform: scale(1.1);
 }
+.card__container:active {
+  transform: scale(1);
+}
 
 
 .loading img {

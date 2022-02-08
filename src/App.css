@@ -8,7 +8,8 @@
 }
 
 body {
-  background: #FCE256;
+  /* background: #FCE256; */
+  background-image: url("../public/pattern.png");
 }
 
 a {
