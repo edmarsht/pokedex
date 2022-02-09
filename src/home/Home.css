@@ -35,3 +35,11 @@
     flex-wrap: wrap;
     margin: 2rem;
 }
+
+@media screen and (max-width: 470px) {
+    .home__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+  }
