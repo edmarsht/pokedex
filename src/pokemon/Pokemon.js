@@ -6,24 +6,23 @@ import "./Pokemon.css";
 
 function Pokemon() {
   const params = useParams();
-  console.log(params);
 
   const index = params.pokemonIndex;
-
-  const pokemonImage = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/${index}.gif`;
-
+    
   const [pokemonRes, setPokemonRes] = useState([]);
-
+  
   useEffect(() => {
-    axios
+      axios
       .get(`https://pokeapi.co/api/v2/pokemon/${index}`)
       .then((res) => setPokemonRes(res.data));
-  }, []);
+    }, []);
+
+    const name = pokemonRes.name;
 
   return (
     <div className="pokemon">
       <div className="pokemon__container">
-        <h1>Coucou</h1>
+        <h1>{name}</h1>
         <img
           src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${index}.svg`}
           alt=""
